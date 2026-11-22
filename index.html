@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dinamo Bike | Taller y venta de bicicletas en Bahía Blanca</title>
+<meta name="description" content="Service técnico, reparación y puesta a punto de bicicletas en Bahía Blanca. Venta de bicis, repuestos y accesorios. Zelarrayán 631, a pocas cuadras de Plaza Rivadavia.">
+<meta property="og:title" content="Dinamo Bike | Taller y venta de bicicletas en Bahía Blanca">
+<meta property="og:description" content="Service, reparaciones y puesta a punto. Repuestos y accesorios. Zelarrayán 631, Bahía Blanca.">
+<meta property="og:image" content="logo.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🚲%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BicycleStore",
+  "name": "Dinamo Bike",
+  "image": "local.jpg",
+  "telephone": "+5492915385618",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Zelarrayán 631",
+    "addressLocality": "Bahía Blanca",
+    "addressRegion": "Buenos Aires",
+    "addressCountry": "AR"
+  },
+  "openingHoursSpecification": [
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "20:00"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "10:00", "closes": "13:00"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "16:00", "closes": "20:00"}
+  ]
+}
+</script>
+<style>
+:root{
+  --negro:#0e0e0e;
+  --grafito:#1c1c1c;
+  --linea:#333;
+  --hueso:#f2efe9;
+  --gris:#b5b1a9;
+  --rojo:#e03a2f;
+  --verde:#25d366;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--negro);color:var(--hueso);
+  font-family:"Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif;
+  line-height:1.55;font-size:17px;
+}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--rojo);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+section{padding:56px 0;border-top:1px solid var(--linea)}
+h1,h2,h3{font-family:Impact,"Arial Narrow Bold","Arial Black",sans-serif;font-weight:400;letter-spacing:.01em;line-height:1.05}
+h2{font-size:clamp(30px,5vw,44px);margin-bottom:20px}
+h3{font-size:22px;margin-bottom:6px}
+p{max-width:62ch;color:var(--gris)}
+
+/* Portada */
+.hero{padding:28px 0 56px;border-top:0}
+.marca{display:flex;align-items:center;gap:12px;margin-bottom:36px}
+.marca img{width:56px;height:56px;border-radius:8px;object-fit:cover}
+.marca span{font-family:Impact,"Arial Black",sans-serif;font-size:22px;letter-spacing:.04em}
+.hero-grid{display:grid;gap:32px;align-items:center}
+@media(min-width:820px){.hero-grid{grid-template-columns:1.1fr .9fr}}
+h1{font-size:clamp(42px,9vw,84px);text-transform:uppercase}
+h1 em{font-style:normal;color:var(--rojo)}
+.hero p{font-size:19px;margin:18px 0 26px;color:var(--hueso)}
+.hero img.fachada{width:100%;height:auto;border-radius:10px;display:block;border:1px solid var(--linea)}
+.botones{display:flex;flex-wrap:wrap;gap:12px}
+.btn{
+  display:inline-block;padding:15px 24px;border-radius:8px;font-weight:700;text-decoration:none;
+  font-size:17px;border:2px solid transparent;text-align:center;
+}
+.btn-wa{background:var(--verde);color:#06240f}
+.btn-wa:hover{filter:brightness(1.08)}
+.btn-sec{border-color:var(--hueso)}
+.btn-sec:hover{background:var(--hueso);color:var(--negro)}
+
+/* Servicios */
+.lista{display:grid;gap:0;margin-top:8px}
+@media(min-width:720px){.lista{grid-template-columns:1fr 1fr;column-gap:48px}}
+.item{padding:18px 0;border-bottom:1px solid var(--linea)}
+.item p{font-size:16px}
+
+/* Venta */
+.venta{background:var(--grafito)}
+.venta .wrap{display:grid;gap:12px}
+
+/* Visita */
+.visita-grid{display:grid;gap:32px}
+@media(min-width:820px){.visita-grid{grid-template-columns:1fr 1.1fr}}
+dl{display:grid;gap:18px}
+dt{font-weight:700;color:var(--hueso);margin-bottom:2px}
+dd{color:var(--gris)}
+dd strong{color:var(--hueso);font-weight:600}
+.horarios{width:100%;border-collapse:collapse}
+.horarios td{padding:4px 0;color:var(--gris);vertical-align:top}
+.horarios td:last-child{text-align:right;color:var(--hueso)}
+iframe{width:100%;height:340px;border:0;border-radius:10px;filter:grayscale(.3)}
+
+footer{padding:28px 0 96px;border-top:1px solid var(--linea);color:var(--gris);font-size:14px}
+
+/* Botón fijo en celular */
+.flotante{
+  position:fixed;left:12px;right:12px;bottom:12px;z-index:10;
+  display:flex;gap:10px;
+}
+.flotante .btn{flex:1;padding:14px 10px;box-shadow:0 4px 16px rgba(0,0,0,.5)}
+.flotante .btn-llamar{background:var(--hueso);color:var(--negro)}
+@media(min-width:820px){.flotante{display:none}footer{padding-bottom:28px}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="marca">
+      <img src="logo.jpg" alt="Logo de Dinamo Bike">
+      <span>DINAMO BIKE</span>
+    </div>
+    <div class="hero-grid">
+      <div>
+        <h1>Service de bicis en <em>Bahía Blanca</em></h1>
+        <p>Taller técnico y venta de bicicletas, repuestos y accesorios en pleno centro, a pocas cuadras de Plaza Rivadavia.</p>
+        <div class="botones">
+          <a class="btn btn-wa" href="https://wa.me/5492915385618?text=Hola%20Dinamo%20Bike%2C%20quiero%20consultar%20por%20un%20service" target="_blank" rel="noopener">Escribinos por WhatsApp</a>
+          <a class="btn btn-sec" href="#visita">Cómo llegar</a>
+        </div>
+      </div>
+      <img class="fachada" src="local.jpg" width="633" height="477" alt="Frente del local Dinamo Shop &amp; Service en Zelarrayán 631">
+    </div>
+  </div>
+</header>
+
+<main>
+  <section id="service">
+    <div class="wrap">
+      <h2>Service y reparaciones</h2>
+      <p>Trabajamos con bicicletas urbanas, de montaña y de ruta. Te asesoramos en el taller y te decimos qué necesita tu bici.</p>
+      <div class="lista">
+        <div class="item"><h3>Ajuste de cambios</h3><p>Cambios que saltan o no entran, dejados finos y precisos.</p></div>
+        <div class="item"><h3>Frenos hidráulicos</h3><p>Calibración y purgado para recuperar la frenada.</p></div>
+        <div class="item"><h3>Alineación de ruedas</h3><p>Centrado y tensado de rayos para que la rueda gire derecha.</p></div>
+        <div class="item"><h3>Pinchaduras</h3><p>Parchado y cambio de cámaras, rápido y sin vueltas.</p></div>
+        <div class="item"><h3>Puesta a punto</h3><p>Revisión completa antes de salir a rodar o entrenar.</p></div>
+        <div class="item"><h3>Revisión general</h3><p>Controlamos transmisión, frenos, ruedas y dirección.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="venta">
+    <div class="wrap">
+      <h2>Bicicletas, repuestos y accesorios</h2>
+      <p>Vendemos bicicletas y una selección de repuestos y accesorios para el uso diario o el entrenamiento. Si buscás una pieza puntual, consultanos por WhatsApp.</p>
+      <div class="botones" style="margin-top:12px">
+        <a class="btn btn-wa" href="https://wa.me/5492915385618?text=Hola%20Dinamo%20Bike%2C%20quiero%20consultar%20por%20un%20repuesto" target="_blank" rel="noopener">Consultar un repuesto</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="visita">
+    <div class="wrap">
+      <h2>Visitanos</h2>
+      <div class="visita-grid">
+        <dl>
+          <div>
+            <dt>Dirección</dt>
+            <dd><strong>Zelarrayán 631</strong>, Bahía Blanca, Buenos Aires<br>Centro, a unas cuadras de Plaza Rivadavia</dd>
+          </div>
+          <div>
+            <dt>Horarios</dt>
+            <dd>
+              <table class="horarios">
+                <tr><td>Lunes a viernes</td><td>9:00 a 20:00</td></tr>
+                <tr><td>Sábados</td><td>10:00 a 13:00 y 16:00 a 20:00</td></tr>
+              </table>
+            </dd>
+          </div>
+          <div>
+            <dt>WhatsApp y teléfono</dt>
+            <dd><a href="https://wa.me/5492915385618" target="_blank" rel="noopener"><strong>291 538-5618</strong></a></dd>
+          </div>
+          <div class="botones">
+            <a class="btn btn-sec" href="https://share.google/Pth59uD95yYkNq8Ch" target="_blank" rel="noopener">Abrir en Google Maps</a>
+          </div>
+        </dl>
+        <iframe title="Mapa de Dinamo Bike en Zelarrayán 631, Bahía Blanca" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=Zelarray%C3%A1n+631,+Bah%C3%ADa+Blanca,+Buenos+Aires,+Argentina&amp;output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">Dinamo Bike · Zelarrayán 631, Bahía Blanca</div>
+</footer>
+
+<div class="flotante">
+  <a class="btn btn-wa" href="https://wa.me/5492915385618" target="_blank" rel="noopener">WhatsApp</a>
+  <a class="btn btn-llamar" href="tel:+5492915385618">Llamar</a>
+</div>
+
+</body>
+</html>
